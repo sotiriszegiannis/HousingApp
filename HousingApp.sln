@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{4FBADCD6-0D16-43A7-82CF-2345BDFD89F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{6443CF57-D183-41AB-A1BE-8E80F665AA98}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{F739CA5D-4E2A-4B06-8215-0AC263F9E6B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FBADCD6-0D16-43A7-82CF-2345BDFD89F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FBADCD6-0D16-43A7-82CF-2345BDFD89F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FBADCD6-0D16-43A7-82CF-2345BDFD89F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FBADCD6-0D16-43A7-82CF-2345BDFD89F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6443CF57-D183-41AB-A1BE-8E80F665AA98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6443CF57-D183-41AB-A1BE-8E80F665AA98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6443CF57-D183-41AB-A1BE-8E80F665AA98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6443CF57-D183-41AB-A1BE-8E80F665AA98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F739CA5D-4E2A-4B06-8215-0AC263F9E6B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F739CA5D-4E2A-4B06-8215-0AC263F9E6B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F739CA5D-4E2A-4B06-8215-0AC263F9E6B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F739CA5D-4E2A-4B06-8215-0AC263F9E6B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B76D195-2E31-4183-8CF1-A312C0E41801}
+	EndGlobalSection
+EndGlobal
