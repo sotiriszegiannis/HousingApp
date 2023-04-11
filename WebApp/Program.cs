@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
+using MudBlazor.Services;
+using Repository;
 using WebApp.Areas.Identity;
 using WebApp.Data;
 
@@ -22,6 +24,7 @@ namespace WebApp
             builder.Services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(connectionString,p=>p.MigrationsAssembly("Domain")));
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+            builder.Services.AddMudServices();
             builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<AppDbContext>();
             builder.Services.AddRazorPages();
@@ -29,7 +32,8 @@ namespace WebApp
             builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
             builder.Services.AddSingleton<WeatherForecastService>();
             builder.Services.AddScoped<ITenantResolver, TenantResolver>();
-
+            builder.Services.AddAutoMapper(p => p.AddMaps(AppDomain.CurrentDomain.GetAssemblies()));
+            builder.Services.AddScoped<UsersRepository>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

@@ -16,6 +16,5 @@ namespace Domain
         [TableColumnAttr]
         public HouseUserType HouseUserType { get; set; }
 
-
     }
 }
